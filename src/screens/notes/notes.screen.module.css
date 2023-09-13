@@ -1,0 +1,80 @@
+.bigblue {
+    color: DodgerBlue;
+    padding: 40px;
+    font-family: Arial;
+    text-align: center;
+}
+
+.container_bg {
+    padding: 1rem;
+    min-height: 100vh;
+    background: var(--bg-card);
+}
+
+.text_area {
+    width: 100%;
+    min-height: calc(100vh - 90px);
+}
+
+.date_created {
+    position: absolute;
+    right: 30px;
+    bottom: 100px;
+    font-size: 46px;
+    color: #049cc9;
+    font-weight: bold;
+    z-index: 0;
+    opacity: 0.2;
+}
+
+.date_updated {
+    color: #5b5b5b;
+    position: absolute;
+    right: 30px;
+    bottom: 85px;
+    font-weight: bold;
+    position: absolute;
+    font-size: 11px;
+    color: #069cce;
+    font-weight: bold;
+}
+
+.custom_form {
+    border-style: dotted;
+    border-color: var(--border-color-textarea-card);
+}
+
+.custom_form label {
+    top: 40px;
+    background: var(--bg-card);
+    color: var(--label-color-card) !important;
+    border-radius: 999px;
+    padding: 10px 15px;
+}
+
+.custom_form textarea {
+    background: transparent;
+    border-color: var(--border-color-textarea-card);
+    padding-top: 1rem;
+    color: var(--color-white);
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.custom_form textarea:active,
+.custom_form textarea:focus {
+    border-color: var(--border-color-textarea-card) !important;
+}
+
+.container_btn {
+    position: absolute;
+    right: 0;
+    bottom: -55px;
+    display: flex;
+    gap: 15px;
+    flex-direction: row-reverse;
+}
+
+.container_btn:focus{
+    background: #22c55e!important;
+}

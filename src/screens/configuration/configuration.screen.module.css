@@ -1,0 +1,143 @@
+.header_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-radius: 9999px;
+    border: 3px solid blue;
+    padding: 5px 15px;
+}
+
+.header_info svg {
+    fill: var(--color-primary);
+}
+
+.header_info h1 {
+    color: white;
+}
+
+.footer_copyright {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    color: white;
+    background: linear-gradient(to right,
+            #7953cd 20%,
+            #00affa 30%,
+            #0190cd 70%,
+            #764ada 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+
+.card {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgb(0 0 0 / 25%);
+    transition: all 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+}
+
+.card__link,
+.card__exit,
+.card__icon {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.card__link::after {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.5s;
+}
+
+.card__link:hover::after {
+    width: 100%;
+}
+
+.card__exit {
+    grid-row: 1/2;
+    justify-self: end;
+}
+
+.card__icon {
+    grid-row: 2/3;
+    font-size: 30px;
+}
+
+.card__title {
+    grid-row: 3/4;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.card__apply {
+    grid-row: 4/5;
+    align-self: center;
+}
+
+
+
+.card_1 {
+    background: radial-gradient(#1fe4f5, #3fbafe);
+}
+
+.card_2 {
+    background: radial-gradient(#fbc1cc, #fa99b2);
+}
+
+.card_3 {
+    background: radial-gradient(#76b2fe, #b69efe);
+}
+
+.card_4 {
+    background: linear-gradient(166deg, #717171, #05050500);
+}
+
+.card_5 {
+    background: radial-gradient(#f588d8, #c0a3e5);
+}
+
+
+
+@media (max-width: 1600px) {
+    .cards {
+        justify-content: center;
+    }
+}

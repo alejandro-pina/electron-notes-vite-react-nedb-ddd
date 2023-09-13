@@ -1,0 +1,11 @@
+.profile_image
+{
+    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);
+    border-radius: 9999px;
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 0.75rem;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}

@@ -1,0 +1,88 @@
+.container {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.square {
+	box-sizing: border-box;
+}
+
+.circle {
+	box-sizing: border-box;
+}
+
+.triangle {
+	box-sizing: border-box;
+}
+
+.square {
+	background-color: transparent;
+	border-radius: 0;
+}
+
+.circle {
+	background-color: transparent;
+	border-radius: 50%;
+}
+
+.triangle {
+	background-color: transparent;
+	width: 0;
+	height: 0;
+}
+
+.square,
+.circle,
+.triangle {
+	border-width: 1px;
+	border-style: solid;
+}
+
+
+
+.red {
+	border-color: red;
+}
+
+.green {
+	border-color: green;
+}
+
+.blue {
+	border-color: blue;
+}
+
+.yellow {
+	border-color: yellow;
+}
+
+.orange {
+	border-color: orange;
+}
+
+.purple {
+	border-color: purple;
+}
+
+.black {
+	border-color: black;
+}
+
+.white {
+	border-color: white;
+}
+
+.grey {
+	border-color: grey;
+}
+
+
+
+.none {
+	border-style: none;
+}
+
+.outline {
+	background-color: transparent;
+}

@@ -1,0 +1,271 @@
+.not_found_animation {
+	position: relative;
+	height: 220px;
+	width: 250px;
+	background: #161616;
+}
+
+.not_found_animation_ear {
+	position: absolute;
+	top: -23%;
+	height: 40%;
+	width: 22%;
+	background: #fff;
+}
+
+.not_found_animation_ear::before,
+.not_found_animation_ear::after {
+	content: '';
+	position: absolute;
+	bottom: 11px;
+	height: 10%;
+	width: 5%;
+	border-radius: 50%;
+	background: #161616;
+}
+
+.not_found_animation_ear::after {
+	transform-origin: 50% 100%;
+}
+
+.not_found_animation_ear_left {
+	left: 5%;
+	border-radius: 70% 30% 0% 0%/100% 100% 0% 0%;
+	transform: rotate(-15deg);
+}
+
+.not_found_animation_ear_left::before,
+.not_found_animation_ear_left::after {
+	right: 50%;
+}
+
+.not_found_animation_ear_left::after {
+	transform: rotate(-45deg);
+}
+
+.not_found_animation_ear_right {
+	right: 5%;
+	border-radius: 30% 70% 0% 0%/100% 100% 0% 0%;
+	transform: rotate(15deg);
+}
+
+.not_found_animation_ear_right::before,
+.not_found_animation_ear_right::after {
+	left: 50%;
+}
+
+.not_found_animation_ear_right::after {
+	transform: rotate(45deg);
+}
+
+.not_found_animation_face {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #161616;
+	border-radius: 50%;
+}
+
+.not_found_animation_eye {
+	position: absolute;
+	top: 35%;
+    height: 20%;
+    width: 20%;
+	background: #fff;
+	border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
+}
+
+.not_found_animation_eye::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 0;
+	width: 100%;
+	border-radius: 0 0 50% 50%/0 0 40% 40%;
+	background: #161616;
+	-webkit-animation: blink 4s infinite ease-in;
+	animation: blink 4s infinite ease-in;
+}
+.to_back_container
+{
+	position: absolute;
+	display: flex;
+	gap: 15px;
+	top: -40%;
+	width: 100%;
+	justify-content: center;
+}
+@-webkit-keyframes blink {
+	0% {
+		height: 0;
+	}
+
+	90% {
+		height: 0;
+	}
+
+	92.5% {
+		height: 100%;
+	}
+
+	95% {
+		height: 0;
+	}
+
+	97.5% {
+		height: 100%;
+	}
+
+	100% {
+		height: 0;
+	}
+}
+
+@keyframes blink {
+	0% {
+		height: 0;
+	}
+
+	90% {
+		height: 0;
+	}
+
+	92.5% {
+		height: 100%;
+	}
+
+	95% {
+		height: 0;
+	}
+
+	97.5% {
+		height: 100%;
+	}
+
+	100% {
+		height: 0;
+	}
+}
+
+.not_found_animation_eye::before {
+	content: '';
+	position: absolute;
+	top: 60%;
+	height: 10%;
+	width: 15%;
+	background: #fff;
+	border-radius: 50%;
+}
+
+.not_found_animation_eye_left {
+	left: 20%;
+}
+
+.not_found_animation_eye_right {
+	right: 20%;
+}
+
+
+
+.not_found_animation_eye_pupil {
+    position: absolute;
+    top: 25%;
+    height: 50%;
+    width: 20%;
+    background: #161616;
+    border-radius: 50%;
+    -webkit-animation: look-around-reverse 4s infinite;
+    animation: look-around-reverse 4s infinite;
+}
+
+@-webkit-keyframes look-around-reverse {
+    0% {
+        transform: translate(0);
+    }
+
+    5% {
+        transform: translate(-50%, -25%);
+    }
+
+    10% {
+        transform: translate(-50%, -25%);
+    }
+
+    15% {
+        transform: translate(100%, -25%);
+    }
+
+    20% {
+        transform: translate(100%, -25%);
+    }
+
+    25% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes look-around-reverse {
+    0% {
+        transform: translate(0);
+    }
+
+    5% {
+        transform: translate(-50%, -25%);
+    }
+
+    10% {
+        transform: translate(-50%, -25%);
+    }
+
+    15% {
+        transform: translate(100%, -25%);
+    }
+
+    20% {
+        transform: translate(100%, -25%);
+    }
+
+    25% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+.not_found_animation_eye_left .not_found_animation_eye_pupil {
+	right: 30%;
+}
+
+.not_found_animation_eye_right .not_found_animation_eye_pupil {
+	left: 30%;
+}
+
+.not_found_animation_muzzle {
+	position: absolute;
+    top: 70%;
+    left: 50%;
+    height: 7%;
+    width: 9%;
+    background: #fff;
+    transform: translateX(-50%);
+    border-radius: 50% 50% 50% 50%/30% 30% 70% 70%;
+}
+
+
+.not_found_container {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #161616;
+	position: fixed;
+	width: 100%;
+}

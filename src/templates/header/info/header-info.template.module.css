@@ -1,0 +1,17 @@
+.header_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-radius: 9999px;
+    padding: 5px 15px;
+    background: var(--screen-title-bg-color);
+    
+}
+.header_info h1 {
+    color: var(--screen-title-color);
+    text-transform: capitalize;
+}
+.header_info svg {
+    fill: var(--screen-title-icon-color);
+}

@@ -1,0 +1,95 @@
+/***
+    The new CSS reset - version 1.7.3 (last updated 7.8.2022)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+ *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+  }
+  
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  
+  a, button {
+    cursor: revert;
+  }
+  
+  
+  ol, ul, menu {
+    list-style: none;
+  }
+  
+  
+  img {
+    max-width: 100%;
+  }
+  
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  
+  input, textarea {
+    -webkit-user-select: auto;
+    user-select: auto;
+  }
+  
+  
+  textarea {
+    white-space: revert;
+  }
+  
+  
+  meter {
+    -webkit-appearance: revert;
+    appearance: revert;
+  }
+  form {
+    display: block;
+    margin-top: 0em;
+}
+  
+  ::placeholder {
+    color: unset;
+  }
+  
+  /* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+  :where([hidden]) {
+    display: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  /* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly.
+   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+  :where([contenteditable]:not([contenteditable="false"])) {
+    -moz-user-modify: read-write;
+    -webkit-user-modify: read-write;
+    overflow-wrap: break-word;
+    line-break: anywhere;
+    -webkit-line-break: after-white-space;
+    user-select: auto;
+    -webkit-user-select: auto;
+  }
+  
+  
+  :where([draggable="true"]) {
+    -webkit-user-drag: element;
+  }
+
+  

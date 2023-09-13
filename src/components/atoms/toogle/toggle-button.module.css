@@ -1,0 +1,54 @@
+.toggleButton {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 4px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	gap: 10px;
+	transition: transform 0.2s ease-in-out;
+}
+
+.toggleButton:hover {
+	transform: scale(1.05);
+}
+
+.toggleButtonBackground {
+	width: 48px;
+	height: 24px;
+	border-radius: 12px;
+	background-color: #d6d6d6;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2px;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.toggleButtonBackground.on {
+	background-color: var(--color-primary);
+}
+
+.toggleButtonCircle {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	transition: transform 0.2s ease-in-out;
+}
+
+.toggleButtonCircle.on {
+	transform: translateX(24px);
+}
+
+.toggleButtonContent {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	margin-left: 8px;
+}
