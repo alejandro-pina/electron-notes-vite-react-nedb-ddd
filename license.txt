@@ -1,0 +1,13 @@
+This project is a personal work and is provided "as is." The author and copyright holder of this project ("the author") assume no responsibility for any damage, loss, or failure that may arise from the use of this project. By using this project, you agree to do so at your own risk, and the author shall not be liable for any issues that may arise.
+
+The author has made every effort to ensure the accuracy and completeness of this project, but it is not guaranteed to be free from errors or defects. The author assumes no responsibility for any errors, defects, or lack of accuracy in this project.
+
+This project is a creative and personal work of the author and is not endorsed or affiliated with any organization, company, or entity. Any resemblance to other projects, products, or services is purely coincidental.
+
+The author reserves the right to modify, update, or withdraw this project at any time without prior notice.
+
+By using this project, you accept this disclaimer and acknowledge that the author shall not be liable for any claims, damages, losses, or expenses that may arise from your use of it.
+
+If you do not agree with the terms of this disclaimer, we recommend that you do not use this project.
+
+Date: 13/09/2023
